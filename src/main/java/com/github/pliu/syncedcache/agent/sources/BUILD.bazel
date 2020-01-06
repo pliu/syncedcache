@@ -1,0 +1,22 @@
+java_library(
+    name = "ROZKClient",
+    srcs = ["ROZKClient.java"],
+    visibility = ["//src/test/java/com/github/pliu/syncedcache/agent/sources:__pkg__"],
+    deps = [
+        ":ROClient",
+        "@maven//:org_apache_curator_curator_client",
+        "@maven//:org_apache_curator_curator_framework",
+        "@maven//:org_apache_curator_curator_recipes",
+    ],
+)
+
+java_library(
+    name = "ROClient",
+    srcs = ["ROClient.java"],
+    exports = [
+        "//src/main/java/com/github/pliu/syncedcache/agent/handlers:Handler",
+    ],
+    deps = [
+        "//src/main/java/com/github/pliu/syncedcache/agent/handlers:Handler",
+    ],
+)

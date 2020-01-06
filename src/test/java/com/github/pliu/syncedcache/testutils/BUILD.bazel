@@ -1,0 +1,13 @@
+package(default_visibility = ["//src/test/java/com/github/pliu/syncedcache:__subpackages__"])
+
+java_library(
+    name = "ZKClient",
+    testonly = True,
+    srcs = ["ZKClient.java"],
+    exports = [
+        "@maven//:org_apache_zookeeper_zookeeper",
+    ],
+    deps = [
+        "@maven//:org_apache_zookeeper_zookeeper",
+    ],
+)

@@ -1,0 +1,25 @@
+java_library(
+    name = "CLoader",
+    srcs = ["CLoader.java"],
+)
+
+java_library(
+    name = "Pluggable",
+    srcs = ["Pluggable.java"],
+)
+
+java_library(
+    name = "PluginContainer",
+    srcs = ["PluginContainer.java"],
+    deps = [":Pluggable"],
+)
+
+java_library(
+    name = "PluginController",
+    srcs = ["PluginController.java"],
+    deps = [
+        ":CLoader",
+        ":Pluggable",
+        ":PluginContainer",
+    ],
+)

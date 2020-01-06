@@ -1,0 +1,9 @@
+java_library(
+    name = "RWZKClient",
+    srcs = ["RWZKClient.java"],
+    deps = [
+        "@maven//:org_apache_curator_curator_client",
+        "@maven//:org_apache_curator_curator_framework",
+        "@maven//:org_apache_curator_curator_recipes",
+    ],
+)

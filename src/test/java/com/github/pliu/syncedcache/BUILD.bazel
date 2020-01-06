@@ -1,0 +1,7 @@
+test_suite(
+    name = "AllTests",
+    tests = [
+        "//src/test/java/com/github/pliu/syncedcache/agent:AgentTests",
+        "//src/test/java/com/github/pliu/syncedcache/shared:SharedTests",
+    ],
+)

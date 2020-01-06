@@ -1,0 +1,5 @@
+java_library(
+    name = "Handler",
+    srcs = ["Handler.java"],
+    visibility = ["//src/main/java/com/github/pliu/syncedcache/agent/sources:__pkg__"],
+)

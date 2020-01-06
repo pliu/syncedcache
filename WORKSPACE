@@ -25,7 +25,7 @@ maven_install(
         maven.artifact(
             group = "org.apache.zookeeper",
             artifact = "zookeeper",
-            version = "3.5.5",
+            version = "3.3.2",
         ),
         maven.artifact(
             group = "com.sparkjava",
@@ -41,6 +41,21 @@ maven_install(
             group = "ch.qos.logback",
             artifact = "logback-classic",
             version = "1.2.3",
+        ),
+        maven.artifact(
+            group = "org.apache.curator",
+            artifact = "curator-recipes",
+            version = "4.2.0",
+        ),
+        maven.artifact(
+            group = "org.apache.curator",
+            artifact = "curator-framework",
+            version = "4.2.0",
+        ),
+        maven.artifact(
+            group = "org.apache.curator",
+            artifact = "curator-client",
+            version = "4.2.0",
         ),
         "junit:junit:4.12",
     ],

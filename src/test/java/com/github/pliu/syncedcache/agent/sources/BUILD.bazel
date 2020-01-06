@@ -1,0 +1,17 @@
+java_test(
+    name = "TestROZKClient",
+    srcs = ["TestROZKClient.java"],
+    tags = ["exclusive"],
+    deps = [
+        "//src/main/java/com/github/pliu/syncedcache/agent/sources:ROZKClient",
+        "//src/test/java/com/github/pliu/syncedcache/testutils:ZKClient",
+        "@maven//:junit_junit",
+    ],
+)
+
+test_suite(
+    name = "AgentSourceTests",
+    tests = [
+        ":TestROZKClient",
+    ],
+)

@@ -1,0 +1,6 @@
+test_suite(
+    name = "SharedTests",
+    tests = [
+        "//src/test/java/com/github/pliu/syncedcache/shared/pluginframework:PluginFramworkTests"
+    ]
+)
